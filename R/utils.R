@@ -1,6 +1,17 @@
 
 
 
+#' Defaults for NULL values
+#'
+#' @param x
+#' @param y
+#'
+#' @return Return y if x is NULL, empty or NA
+#' @export
+#'
+#' @examples
+#'
+#'
 `%||%` <- function (x, y){
 
   if (is.empty(x)){
@@ -14,15 +25,5 @@
 
   } else {x}
 }
-
-
-
-removeNulls <- function(x){
-  if (length(x) == 0 || !is.list(x))
-    return(x)
-  if(is.empty(x)) return(list())
-  x[!unlist(lapply(x,is.null))]
-}
-
 
 
