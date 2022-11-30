@@ -1,7 +1,14 @@
 
 
 
+#' Remove Nu
+#'
+#' @param x
+#'
+#' @return
 #' @export
+#'
+#' @examples
 removeNulls <- function(x){
   if (length(x) == 0 || !is.list(x))
     return(x)
