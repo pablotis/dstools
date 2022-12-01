@@ -1,14 +1,13 @@
 
 
 
-#' Remove Nu
+#' Remove NULL values
 #'
-#' @param x
+#' @param x vector with NULL value(s)
 #'
-#' @return
+#' @return vector without NULL values
 #' @export
 #'
-#' @examples
 removeNulls <- function(x){
   if (length(x) == 0 || !is.list(x))
     return(x)

@@ -2,13 +2,16 @@
 % Please edit documentation in R/removeNulls.R
 \name{removeNulls}
 \alias{removeNulls}
-\title{Remove Nu}
+\title{Remove NULL values}
 \usage{
 removeNulls(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{vector with NULL value(s)}
+}
+\value{
+vector without NULL values
 }
 \description{
-Remove Nu
+Remove NULL values
 }
