@@ -1,17 +1,26 @@
 
 
 
-#' Defaults for NULL values
+#' @title NULL Pipe
+#' @name %||%
 #'
-#' @param x
-#' @param y
+#' @description Defaults for NULL values
+#'
+#' @param x any value
+#' @param y any value
 #'
 #' @return Return y if x is NULL, empty or NA
-#' @export
 #'
 #' @examples
 #'
+#' x <- "pepe"
+#' y <- "x"
 #'
+#' x %||% y
+#'
+#'
+#' @rdname pipe
+#' @export
 `%||%` <- function (x, y){
 
   if (is.empty(x)){

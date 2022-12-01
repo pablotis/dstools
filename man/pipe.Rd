@@ -2,16 +2,27 @@
 % Please edit documentation in R/pipe.R
 \name{\%||\%}
 \alias{\%||\%}
-\title{Defaults for NULL values}
+\title{NULL Pipe}
 \usage{
 x \%||\% y
 }
 \arguments{
-\item{y}{}
+\item{x}{any value}
+
+\item{y}{any value}
 }
 \value{
 Return y if x is NULL, empty or NA
 }
 \description{
 Defaults for NULL values
+}
+\examples{
+
+x <- "pepe"
+y <- "x"
+
+x \%||\% y
+
+
 }
