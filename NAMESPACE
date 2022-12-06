@@ -2,5 +2,7 @@
 
 export("%||%")
 export(is.empty)
+export(na_proportion)
+export(na_to_chr)
 export(removeNulls)
 export(remove_accents)
